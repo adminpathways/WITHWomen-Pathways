@@ -1,0 +1,10 @@
+DEFAULTS: &DEFAULTS
+  response: $LABEL
+  category: health
+  score: 1
+
+one:
+  <<: *DEFAULTS
+
+two:
+  <<: *DEFAULTS

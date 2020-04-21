@@ -1,0 +1,10 @@
+DEFAULTS: &DEFAULTS
+  slug: $LABEL
+  text: $LABEL
+  answers: [{"text": "Yes","score": 1},{"text": "No","score": 0}]
+
+one:
+  <<: *DEFAULTS
+
+two:
+  <<: *DEFAULTS

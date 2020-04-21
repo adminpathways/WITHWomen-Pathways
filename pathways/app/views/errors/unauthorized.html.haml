@@ -1,0 +1,15 @@
+- content_for :title, 'Not Authorized (401)'
+- content_for :description, 'Sorry, you are not authorized to visit this page.'
+
+.grid-x.align-center
+  .small-12.medium-8.large-6.cell
+    .card
+      .card-divider
+        %h1= yield :title
+      .card-section
+        %p
+          = yield :description
+          %br
+          If you think this is an error, please contact your administrator.
+      .card-divider
+        = link_to fa_icon('home', text: 'Return Home'), root_path

@@ -1,0 +1,11 @@
+DEFAULTS: &DEFAULTS
+  response: $LABEL
+  question: $LABEL
+  text: 'Yes'
+  score: 1
+
+one:
+  <<: *DEFAULTS
+
+two:
+  <<: *DEFAULTS

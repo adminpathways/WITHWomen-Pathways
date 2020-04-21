@@ -1,0 +1,13 @@
+- content_for :title, 'Internal Server Error (500)'
+- content_for :description, "Um, something went wrong, but rest assured that we're working on it."
+
+.grid-x.align-center
+  .small-12.medium-8.large-6.cell
+    .card
+      .card-divider
+        %h1= yield :title
+      .card-section
+        %p
+          = yield :description
+      .card-divider
+        = link_to fa_icon('home', text: 'Return Home'), root_path

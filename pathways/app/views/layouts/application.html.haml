@@ -1,0 +1,8 @@
+!!!
+%html{lang: I18n.locale}
+  %head
+    = render 'layouts/head'
+  %body{class: "#{controller_name} #{action_name}"}
+    = render 'layouts/callouts'
+    #main
+      = yield

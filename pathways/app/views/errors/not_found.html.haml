@@ -1,0 +1,15 @@
+- content_for :title, 'Page Not Found (404)'
+- content_for :description, 'Sorry, the page you are looking for cannot be found.'
+
+.grid-x.align-center
+  .small-12.medium-8.large-6.cell
+    .card
+      .card-divider
+        %h1= yield :title
+      .card-section
+        %p
+          = yield :description
+          %br
+          Try checking the URL or return back home.
+      .card-divider
+        = link_to fa_icon('home', text: 'Return Home'), root_path

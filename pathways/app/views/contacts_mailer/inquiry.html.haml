@@ -1,0 +1,8 @@
+- content_for :title, @contact.subject
+
+= simple_format(@contact.message)
+
+%p
+  %b= @contact.name
+  %br/
+  = mail_to @contact.email, @contact.email
